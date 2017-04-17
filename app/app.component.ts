@@ -9,6 +9,8 @@ import {ZippyComponent} from './zippy/component/zippy.component'
 import {SubscribeFormComponent} from './subscribe-form/component/subscribe-form.component'
 import {SignUpFormComponent} from './signup-form/component/signup-form.component'
 import {ChangePasswordFormComponent} from './changepwd-form/component/changepwd-form.component'
+import {SpotifyArtistSearchComponent} from './spotifySearch/spotifyartistsearch.component'
+import {GitHubProfileComponent} from './github/github-profile.component'
 @Component({
     selector: 'my-app',
     template: `
@@ -32,12 +34,15 @@ import {ChangePasswordFormComponent} from './changepwd-form/component/changepwd-
                <br />
                <subscribe-form>
                </subscribe-form>  
-               <signup-form></signup-form> -->
-               <changepwd-form></changepwd-form>
+               <signup-form></signup-form> 
+               <changepwd-form></changepwd-form> --> 
+               <spotify-search-artists></spotify-search-artists>
+               <!--<github-profile></github-profile> -->
                `,
-    directives: [CourseComponent, AuthorComponent, FavoriteComponent, LikeComponent, LikeStackComponent, TweetComponent, ZippyComponent, SubscribeFormComponent, SignUpFormComponent, ChangePasswordFormComponent]
+    directives: [CourseComponent, AuthorComponent, FavoriteComponent, LikeComponent, LikeStackComponent, TweetComponent, ZippyComponent, SubscribeFormComponent, SignUpFormComponent, ChangePasswordFormComponent, SpotifyArtistSearchComponent, GitHubProfileComponent]
 })
 export class AppComponent { 
+    
     title = "Hello Angular";
 
     post = {

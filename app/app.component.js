@@ -1,4 +1,4 @@
-System.register(['angular2/core', './course/component/course.component', './author/component/author.component', './favorite/component/favorite.component', './like/component/like.component', './like_stack/component/like.stack.component', './tweet/component/tweet.component', './zippy/component/zippy.component', './subscribe-form/component/subscribe-form.component', './signup-form/component/signup-form.component', './changepwd-form/component/changepwd-form.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './course/component/course.component', './author/component/author.component', './favorite/component/favorite.component', './like/component/like.component', './like_stack/component/like.stack.component', './tweet/component/tweet.component', './zippy/component/zippy.component', './subscribe-form/component/subscribe-form.component', './signup-form/component/signup-form.component', './changepwd-form/component/changepwd-form.component', './spotifySearch/spotifyartistsearch.component', './github/github-profile.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './course/component/course.component', './auth
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, course_component_1, author_component_1, favorite_component_1, like_component_1, like_stack_component_1, tweet_component_1, zippy_component_1, subscribe_form_component_1, signup_form_component_1, changepwd_form_component_1;
+    var core_1, course_component_1, author_component_1, favorite_component_1, like_component_1, like_stack_component_1, tweet_component_1, zippy_component_1, subscribe_form_component_1, signup_form_component_1, changepwd_form_component_1, spotifyartistsearch_component_1, github_profile_component_1;
     var AppComponent;
     return {
         setters:[
@@ -46,6 +46,12 @@ System.register(['angular2/core', './course/component/course.component', './auth
             },
             function (changepwd_form_component_1_1) {
                 changepwd_form_component_1 = changepwd_form_component_1_1;
+            },
+            function (spotifyartistsearch_component_1_1) {
+                spotifyartistsearch_component_1 = spotifyartistsearch_component_1_1;
+            },
+            function (github_profile_component_1_1) {
+                github_profile_component_1 = github_profile_component_1_1;
             }],
         execute: function() {
             let AppComponent = class AppComponent {
@@ -89,10 +95,12 @@ System.register(['angular2/core', './course/component/course.component', './auth
                <br />
                <subscribe-form>
                </subscribe-form>  
-               <signup-form></signup-form> -->
-               <changepwd-form></changepwd-form>
+               <signup-form></signup-form> 
+               <changepwd-form></changepwd-form> --> 
+               <spotify-search-artists></spotify-search-artists>
+               <!--<github-profile></github-profile> -->
                `,
-                    directives: [course_component_1.CourseComponent, author_component_1.AuthorComponent, favorite_component_1.FavoriteComponent, like_component_1.LikeComponent, like_stack_component_1.LikeStackComponent, tweet_component_1.TweetComponent, zippy_component_1.ZippyComponent, subscribe_form_component_1.SubscribeFormComponent, signup_form_component_1.SignUpFormComponent, changepwd_form_component_1.ChangePasswordFormComponent]
+                    directives: [course_component_1.CourseComponent, author_component_1.AuthorComponent, favorite_component_1.FavoriteComponent, like_component_1.LikeComponent, like_stack_component_1.LikeStackComponent, tweet_component_1.TweetComponent, zippy_component_1.ZippyComponent, subscribe_form_component_1.SubscribeFormComponent, signup_form_component_1.SignUpFormComponent, changepwd_form_component_1.ChangePasswordFormComponent, spotifyartistsearch_component_1.SpotifyArtistSearchComponent, github_profile_component_1.GitHubProfileComponent]
                 }), 
                 __metadata('design:paramtypes', [])
             ], AppComponent);
